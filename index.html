@@ -24,6 +24,30 @@
   -moz-osx-font-smoothing: grayscale;
 }
 </style>
+<style>
+/* ---- Ajustements généraux ---- */
+.navbar {
+  margin-top: 1.5rem; /* espace sous le haut de l’écran */
+}
+
+/* ---- Ajustements sur mobile ---- */
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 2.5rem; /* descend un peu la navbar */
+  }
+
+  .chat-input-wrapper {
+    margin-bottom: 4rem; /* remonte le champ d’entrée */
+    position: relative;
+    bottom: 1.5rem;
+  }
+
+  /* Si ton input est collé au bas de la fenêtre */
+  .chat-input {
+    margin-bottom: 0 !important;
+  }
+}
+</style>
 </head>
 <body>
   <div class="page-wrapper">
