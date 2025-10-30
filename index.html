@@ -33,11 +33,15 @@
 /* ---- Ajustements sur mobile ---- */
 @media (max-width: 768px) {
   .navbar {
-    margin-top: 2.5rem; /* descend un peu la navbar */
+    margin-top: 1.5rem; /* descend un peu la navbar */
+  }
+
+  .w-embed.w-script {
+    margin-bottom: 2rem; /* espace au-dessus du chat */
   }
 
   .chat-input-wrapper {
-    margin-bottom: 4rem; /* remonte le champ d’entrée */
+    margin-bottom: 6rem; /* remonte le champ d’entrée */
     position: relative;
     bottom: 1.5rem;
   }
@@ -48,6 +52,14 @@
   }
 }
 </style>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    if (window.Webflow) {
+      window.Webflow.require('ix2').init(); // relance les interactions Webflow
+    }
+  });
+</script>
+
 </head>
 <body>
   <div class="page-wrapper">
